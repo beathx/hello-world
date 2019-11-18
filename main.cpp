@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     VideoCapture cap1(0);
-	VideoCapture cap2(2);
+    VideoCapture cap2(2);
 
     cout << "WIDTH: " << cap1.get(CV_CAP_PROP_FRAME_WIDTH) << endl;
     cout << "HEIGHT: " << cap1.get(CV_CAP_PROP_FRAME_HEIGHT) << endl;
@@ -26,14 +26,14 @@ int main()
 
 	cv::Mat frame1;
     //frame1.create(720, 640, CV_8UC1);
-    	cv::Mat frame2;
+    cv::Mat frame2;
 	//if(!cap.open(202))
     	//std::cout << "camera error!" << std::endl;
 	while(1)
 	{
 		cap1 >> frame1;
 		//frame1.create(640, 480, CV_8UC1);
-        	cap2 >> frame2;
+        cap2 >> frame2;
 		if (frame1.empty() || frame2.empty())
 		    break;
 
