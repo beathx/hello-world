@@ -24,7 +24,7 @@ int main()
     cap2.set(CV_CAP_PROP_FPS, 50);
     */
 
-	cv::Mat frame1;
+    cv::Mat frame1;
     //frame1.create(720, 640, CV_8UC1);
     cv::Mat frame2;
 	//if(!cap.open(202))
