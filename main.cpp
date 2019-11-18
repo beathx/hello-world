@@ -26,14 +26,14 @@ int main()
 
 	cv::Mat frame1;
     //frame1.create(720, 640, CV_8UC1);
-    cv::Mat frame2;
+    	cv::Mat frame2;
 	//if(!cap.open(202))
     	//std::cout << "camera error!" << std::endl;
 	while(1)
 	{
 		cap1 >> frame1;
 		//frame1.create(640, 480, CV_8UC1);
-        cap2 >> frame2;
+        	cap2 >> frame2;
 		if (frame1.empty() || frame2.empty())
 		    break;
 
